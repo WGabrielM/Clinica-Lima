@@ -1,3 +1,72 @@
-p {
-    text-align: center;
+html {
+    background: #F8F8FF;
 }
+
+.header {
+    background-color: rgb(246, 250, 252);
+    padding: 20px 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Header*/
+
+.box {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*<h1><img calss ="logo" src="logo.jpg"></h1>*/
+nav {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color:#778899;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #44709b;
+    text-decoration: underline;
+}
+
+/*Main Description*/
+
+.description {
+    padding: 30px;
+}
+
+.main-title {
+    padding-left: 20px;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.main-title p {
+    margin: 0 0 1em;
+}
+
+.main-title strong {
+    font-weight: bold;
+}
+
+p {
+    text-align: left;
+}
+
+/**/
