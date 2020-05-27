@@ -1,10 +1,5 @@
 *{
 	box-sizing: border-box;
- }
-
-body{
-	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	font-size: 14px;
 }
 
 header{
@@ -30,6 +25,18 @@ header .container:before{
 	display:inline-block;
 	height: 100%;
 	vertical-align:	middle;
+}
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+footer {
+    background: url("bg.jpg");
+    color: white;
+    padding: 40px 0;
+    text-align: center;
 }
 
 /*Nav bar*/
