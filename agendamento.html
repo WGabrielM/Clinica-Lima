@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Agenda da Clínica</title>
+      <link rel="stylesheet" type="text/css" href="reset.css">
+		  <link rel="stylesheet" type="text/css" href="style-scheduling.css">
+  </head>
+  <body>
+      <header>
+        <div class="box">
+          <nav class="topnav"></nav>
+            <a class="active" href="agendamento.html">Agendamento</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="index.html">Home</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="container">
+          <h2>Meus pacientes</h2>
+          <label for="filtrar-tabela">Filtre:</label>
+          <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome e Sobrenome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+              </tr>
+            </thead>
+            <tbody id="tabela-pacientes">
+              <tr class="paciente" id="primeiro-paciente">
+                <td class="info-nome">Paulo Silva</td>
+                <td class="info-email">paulosilva@gmail.com</td>
+                <td class="info-telefone">(61) 98459 2349</td>
+              </tr>
+  
+              <tr class="paciente" >
+                <td class="info-nome">João Ribeiro</td>
+                <td class="info-email">joaoribeiro@gmail.com</td>
+                <td class="info-telefone">(61) 98152 6347</td>
+              </tr>
+  
+              <tr class="paciente" >
+                <td class="info-nome">Erica Lima</td>
+                <td class="info-email">ericalima@gmail.com</td>
+                <td class="info-telefone">(61) 99678 1625</td>
+              </tr>
+  
+              <tr class="paciente">
+                <td class="info-nome">Douglas Anderson</td>
+                <td class="info-email">douglasanderson@gmail.com</td>
+                <td class="info-telefone">(61) 99230 7854</td>
+              </tr>
+              <tr class="paciente" >
+                <td class="info-nome">Tatiana Oliveira</td>
+                <td class="info-email">tatianaoliveira@gmail.com</td>
+                <td class="info-telefone">(61) 98978 3209</td>
+              </tr>
+            </tbody>
+          </table>
+          <span id="erro-ajax" class="invisivel">Erro ao buscar os pacientes</span>
+  
+          <button id="buscar-pacientes" class="botao bto-principal">Buscar Pacientes</button>
+  
+        </section>
+      </main>
+
+      <section class="container">
+		    <h2 id="titulo-form">Adicionar novo paciente</h2>
+			<ul id="mensagens-erro"></ul>
+		    <form id="form-adiciona">
+		        <div class="">
+		            <label for="nome">Nome:</label>
+		            <input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+		        </div>
+		        <div class="grupo">
+		            <label for="email">Email:</label>
+		            <input id="email" name="email" type="text" placeholder="Digite o email do seu paciente" class="campo campo-medio">
+		        </div>
+		        <div class="grupo">
+		            <label for="telefone">Telefone:</label>
+		            <input id="telefone" name="telefone" type="text" placeholder="Digite o telefone do seu paciente" class="campo campo-medio">
+            </div>
+
+		        <button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+		    </form>
+    </section>
+    
+    <script src="form.js" ></script>
+		<script src="remover-paciente.js" ></script>
+		<script src="filtra.js" ></script>
+		<script src="buscar-pacientes.js" ></script>
+
+  </body>
+</html>
