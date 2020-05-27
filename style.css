@@ -9,23 +9,40 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    margin: 0 auto;
+    text-align: left;
+}
+
+* {
     margin: 0;
+    padding: 0;
+}
+
+footer {
+    background: url("bg.jpg");
+    color: white;
+    padding: 40px 0;
+    text-align: center;
 }
 
 /*Header*/
 
 .box {
-    overflow: hidden;
     background: #333;
+    overflow: hidden;
 }
 
 .box a {
-    float: right;
     color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    float: right;
     font-size: 17px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    
 }
 
 .box a:hover {
@@ -41,6 +58,8 @@ body {
 /*Main Description*/
 
 .description {
+    margin-bottom: 40px;
+    margin: 0 0 1em;
     padding: 30px;
 }
 
@@ -48,7 +67,8 @@ body {
     padding-left: 20px;
     font-size: 1.5em;
     margin: 0 0 1em;
-    clear: left;
+    
+    text-align: center;
 }
 
 .main-title p {
@@ -57,10 +77,6 @@ body {
 
 .main-title strong {
     font-weight: bold;
-}
-
-p {
-    text-align: left;
 }
 
 .carousel {
@@ -72,9 +88,15 @@ p {
 
 .services {
     padding: 1em 0;
+
 }
 
 .services-content {
+    width: 640px;
+	margin: 0 auto;
+}
+
+.list-services {
     width: 40%;
     display: inline-block;
     vertical-align: top;
@@ -82,6 +104,10 @@ p {
 
 .list-services li {
     line-height: 1.5;
+}
+
+.list-services li:before {
+    content: "🟊";
 }
 
 /*Video*/
