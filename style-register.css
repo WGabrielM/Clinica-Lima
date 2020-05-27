@@ -1,4 +1,11 @@
 
+footer {
+    background: url("bg.jpg");
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
 /*Header*/
 
 .box {
