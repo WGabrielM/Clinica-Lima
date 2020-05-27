@@ -2,8 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clínica Lima</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
 
@@ -32,8 +36,40 @@
           fala, linguagem e comunicação apresentam excelentes resultados por meio de 
           terapias específicas, de acordo <strong> com as necessidades de cada pessoa</strong> sejam 
           bebês, crianças, adultos ou idosos.</p>
-        
       </section>
+
+      <div class="carousel">
+        <div id="fonoCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#fonoCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#fonoCarousel" data-slide-to="1"></li>
+            <li data-target="#fonoCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="talk.jpg" alt="Talk" style="width:100%;">
+            </div>
+
+            <div class="item">
+              <img src="toy.jpg" alt="Toy" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="treating.jpg" alt="New york" style="width:100%;">
+            </div>
+          </div>
+
+          <a class="left carousel-control" href="#fonoCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="right carousel-control" href="#fonoCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+      </div>
 
       <section class="services">
         <h2 class="main-title">Nossos Serviços</h2>
@@ -53,14 +89,15 @@
         </div>
 
         <div class="video">
+          <h3></h3>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/Iu5VtQp1FFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
 
       <section class="map">
-        <h3 class="main-title">Nossa Localização</h3>
+        <h4 class="main-title">Nossa Localização</h4>
         <div class="map-content">
-          <iframe src="https://www.google.com/maps/sD2d3hj7DbG8ATYG9" width="100%" height="300" frameborder="0" sytle="border:0" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15352.231220395977!2d-48.045929445019546!3d-15.853558918463207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2d78c00145a1%3A0xee89c69639c4da89!2sHospital%20Santa%20Marta!5e0!3m2!1spt-BR!2sbr!4v1590533083832!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
     </main>
